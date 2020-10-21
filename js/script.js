@@ -15,7 +15,7 @@ console.log(input3.value);
 
 // Variabili di calcolo prezzo intero / sconto 20% / sconto 40%
 
-var prezzoBiglietto = ( input2.value * 0.21 );
+// var prezzoBiglietto = ( input2.value * 0.21 );
 //
 // var prezzoScontato20 = ( prezzoBiglietto - ( prezzoBiglietto * 0.20 ));
 //
@@ -40,9 +40,9 @@ var button2 = document.getElementById('button_annulla');
 
 button1.addEventListener('click',
  function() {
-   nome_pax.innerHTML = input1.value ;
+   nome_pax.innerHTML = input1.value;
+   costo_biglietto.innerHTML = ((input2.value * 0.21).toFixed(2));
    offerta.innerHTML = input3.value;
-   costo.innerHTML = input2.value;
    carrozza.innerHTML = Math.floor(Math.random() * 10) + 1;
    codice.innerHTML = Math.floor(Math.random() * 100000) + 1 ;
    document.getElementById("biglietto").style.display = "block";
