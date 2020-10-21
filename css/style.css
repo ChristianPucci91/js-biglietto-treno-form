@@ -11,7 +11,7 @@
 .container {
   background-color: #b91450;
   text-align: center;
-  min-height: 600px
+  min-height: 100vh;
 }
 
 .container h1 {
@@ -79,6 +79,53 @@ form > label {
   border:1px solid;
   padding: 10px;
   box-shadow: 5px 10px 18px #262222;
+}
 
+/* struttura box biglietto */
 
+.struttura_box_biglietto {
+  width: 100%;
+  min-height: 150px;
+  display: flex;
+}
+
+/* box biglietto  */
+
+.box_biglietto {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 25px 10px;
+  width: 60%;
+  margin:30px auto;
+  background-color: white;
+  min-height: 200px;
+  border:1px solid;
+  box-shadow: 5px 10px 18px #262222
+}
+
+.nome_passeggero {
+  width: 30%;
+  background-color: grey;
+  text-align: left;
+  padding: 10px;
+}
+
+.dettagli_biglietto {
+  display: flex;
+  width: 70%;
+  background-color: white;
+  border-top:1px solid grey;
+  border-bottom:1px solid grey;
+}
+
+/* dettagli biglietto */
+
+.box_dettagli_biglietto {
+  width: 25%;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 15px;
 }
