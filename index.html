@@ -20,11 +20,11 @@
 
           <form class="" action="index.html" method="post">
 
-            <label for="text">Nome e cognome</label>
+            <label for="text">Nome cognome</label>
             <label for="text">Km da percorrere</label>
             <label for="text">Fascia d'et&aacute;</label>
-            <input type="text" name="" value="">
-            <input type="number" id="quantity" name="quantity" min="0"   max="100" step="1" value="30">
+            <input id="nome" type="text" name="" value="">
+            <input id="km" type="number" id="quantity" name="quantity" min="1"   max="100" step="0.5" value="30">
             <select id="eta" name="eta" form="eta">
 
               <option value="Minorenne">Minorenne</option>
@@ -36,8 +36,8 @@
           </form>
            <div class="bottoni">
 
-             <input type="button" name="genera" value="Genera">
-             <input type="button" name="annulla" value="Annulla">
+             <button type="button" name="button">Genera</button>
+             <button type="button" name="button">Annulla</button>
 
            </div>
 
@@ -45,14 +45,14 @@
 
         <h1>IL TUO BIGLIETTO </h1>
 
-        <div class="box_biglietto">
+        <div id="biglietto"class="box_biglietto">
           <h3>DETTAGLIO PASSEGGERI</h3>
           <div class="struttura_box_biglietto">
 
             <div class="nome_passeggero">
 
               <h4>NOME PASSEGGERO</h4>
-              <h3 id="passeggero">pax</h3>
+              <h3 id="passeggero"></h3>
 
             </div>
 
