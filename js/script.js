@@ -7,10 +7,6 @@ document.getElementById("biglietto").style.display = "none";
 var button1 = document.getElementById("button_genera");
 var button2 = document.getElementById("button_annulla");
 
-// Valori di output
-
-var sconto = document.getElementById('sconto')
-
 // diamo le funzionalità del bottone genera
 
   button1.addEventListener('click',
@@ -22,7 +18,10 @@ var sconto = document.getElementById('sconto')
       var km = document.getElementById('km').value;
       //console.log(km);
       var eta = document.getElementById('eta').value;
-      console.log(eta);
+      // console.log(eta);
+      
+      // Valori di output
+      var sconto = document.getElementById('sconto')
 
       // mettiamo in display block la parte del BIGLIETTO
       document.getElementById("biglietto").style.display = "block";
