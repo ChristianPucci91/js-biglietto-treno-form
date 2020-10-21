@@ -17,9 +17,10 @@ console.log(input3.value);
 
 var nome_pax = document.getElementById('passeggero');
 
-//variabile button Genera
+//variabile button Genera & annulla
 
 var button1 = document.getElementById('button_genera');
+var button2 = document.getElementById('button_annulla');
 
 // Function genera
 
@@ -27,6 +28,14 @@ button1.addEventListener('click',
  function() {
    nome_pax.innerHTML = input1.value;
    document.getElementById("biglietto").style.display = "block";
+} );
+
+// Function annulla
+
+button2.addEventListener('click',
+ function() {
+   input1.value = ('');
+   document.getElementById("biglietto").style.display = "none";
 } );
 
 
