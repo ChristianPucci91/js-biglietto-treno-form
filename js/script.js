@@ -13,9 +13,23 @@ console.log(input2.value);
 var input3 = document.getElementById('eta');
 console.log(input3.value);
 
+// Variabili di calcolo prezzo intero / sconto 20% / sconto 40%
+
+var prezzoBiglietto = ( input2.value * 0.21 );
+//
+// var prezzoScontato20 = ( prezzoBiglietto - ( prezzoBiglietto * 0.20 ));
+//
+// var prezzoScontato40 = ( prezzoBiglietto - ( prezzoBiglietto * 0.40 ));
+
+
+
 // Variabili di output
 
 var nome_pax = document.getElementById('passeggero');
+var offerta = document.getElementById('sconto');
+var costo_biglietto = document.getElementById('costo');
+var carrozza = document.getElementById('carrozza');
+var codice = document.getElementById('codice');
 
 //variabile button Genera & annulla
 
@@ -26,7 +40,11 @@ var button2 = document.getElementById('button_annulla');
 
 button1.addEventListener('click',
  function() {
-   nome_pax.innerHTML = input1.value;
+   nome_pax.innerHTML = input1.value ;
+   offerta.innerHTML = input3.value;
+   costo.innerHTML = input2.value;
+   carrozza.innerHTML = Math.floor(Math.random() * 10) + 1;
+   codice.innerHTML = Math.floor(Math.random() * 100000) + 1 ;
    document.getElementById("biglietto").style.display = "block";
 } );
 
@@ -35,21 +53,13 @@ button1.addEventListener('click',
 button2.addEventListener('click',
  function() {
    input1.value = ('');
+   input2.value = (1);
+   input3.value = ('');
    document.getElementById("biglietto").style.display = "none";
 } );
 
 
-// prezzo biglietto ( 0.21€ per km * km inseriti dall'utente)
 
-var prezzoBiglietto = ( km * 0.21 );
-
-// prezzo biglietto scontato 20% ( prezzo intero - prezzo percentuale = prezzo scontato)
-
-var prezzoScontato20 = ( prezzoBiglietto - ( prezzoBiglietto * 0.20 ));
-
-// prezzo biglietto scontato 40% ( prezzo intero - prezzo percentuale = prezzo scontato)
-
-var prezzoScontato40 = ( prezzoBiglietto - ( prezzoBiglietto * 0.40 ));
 
 
 // tasti genera e annulla
