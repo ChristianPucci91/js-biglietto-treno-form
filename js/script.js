@@ -15,8 +15,19 @@ console.log(input3.value);
 
 // Variabili di output
 
-nome_pax = document.getElementById('passeggero')
+var nome_pax = document.getElementById('passeggero');
 
+//variabile button Genera
+
+var button1 = document.getElementById('button_genera');
+
+// Function genera
+
+button1.addEventListener('click',
+ function() {
+   nome_pax.innerHTML = input1.value;
+   document.getElementById("biglietto").style.display = "block";
+} );
 
 
 // prezzo biglietto ( 0.21€ per km * km inseriti dall'utente)
